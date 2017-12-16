@@ -1,0 +1,18 @@
+{
+    "name": "homebridge-multicast-thermometer",
+    "description": "Homebridge plugin listens for UDP multicast temp sensor updates",
+    "author": "John Southworth",
+    "version": "0.0.1",
+    "license": "MIT",
+    "main": "index.js",
+    "keywords": [
+	"homebridge-plugin"
+    ],
+    "repository": {
+	"type": "git",
+	"url": "git://github.com/jsouthworth/homebridge-multicast-thermometer.git"
+    },
+    "engines": {
+	"homebridge": ">=0.2.0"
+    }
+}
