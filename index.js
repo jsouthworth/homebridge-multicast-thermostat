@@ -41,7 +41,7 @@ MulticastThermometerPlatform.prototype.addAccessory = function(log, obj) {
 }
 
 MulticastThermometerPlatform.prototype.startListener = function() {
-  this.socket = dgram.createSocket('udp4');
+  this.socket = dgram.createSocket({type: 'udp4', reuseAddr: true});
   this.socket.on('error', function(err) {
     this.log(err);
     this.restartListener();
